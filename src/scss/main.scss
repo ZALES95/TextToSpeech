@@ -1,0 +1,59 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	// font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: "Montserrat", sans-serif;
+	color: rgb(255, 255, 255);
+	background-color: #121212;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
