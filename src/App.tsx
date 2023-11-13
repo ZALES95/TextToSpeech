@@ -131,9 +131,9 @@ function App() {
 				onChange={handleFileChange}
 				multiple={false}
 			/>
-			{errorMsg && <p className='text-4xl'>{errorMsg}</p>}
+			{errorMsg && <p className='text-4xl text-center'>{errorMsg}</p>}
 			{selectedFile && (
-				<p className='text-4xl'>
+				<p className='text-4xl text-center'>
 					<i className='fa-solid fa-file-lines'></i> {selectedFile?.name}
 				</p>
 			)}
@@ -191,7 +191,7 @@ function App() {
 						<span className='sm:text-lg font-normal'> ({settings.format})</span>
 					</button>
 				</div>
-				<div className='flex gap-7 items-end justify-center xl:self-end'>
+				<div className='flex flex-col-reverse xl:flex-row gap-7 items-center justify-center xl:self-end'>
 					{audio && audio !== "" && (
 						<a
 							href={audio}
